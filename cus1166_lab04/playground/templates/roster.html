@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title> Class Roster </title>
-  </head>
-  <body>
+{% extends layout.html %}
+  {% block content %}
       <h1> Student Roster </h1>
       {% if grade_view == 0 %}
       <ul>
@@ -24,5 +20,4 @@
         {% endfor %}
       </ul>
       {% endif %}
-    </body>
-  </html>
+  {% endblock %}
